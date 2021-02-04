@@ -86,8 +86,8 @@ nav a:last-of-type{
 .title{
     display: flex;
     justify-content: flex-end;
-    width: 94%;
-    padding-top: 70px;
+    width: 95%;
+    height: 55%;
 }
 
 .title h1{
@@ -96,6 +96,7 @@ nav a:last-of-type{
     font-weight: 400;
     font-size: 60px;
     letter-spacing: 20px;
+    align-self: flex-end;
 }
 
 .gallery-wrapper{
@@ -278,11 +279,13 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 
     .title{
         width: 100%;
+        height: 85%;
+        justify-content: center;
     }
 
     .title h1{
-        margin: 26% auto;
         font-size: 60px;
+        align-self: flex-end;
     }
 
     .title-square-wrapper{
