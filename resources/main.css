@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+  }
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+
+}
+
+.header-image-wrapper{
+    background-image: url(../assets/bg-header.jpg);
+    height: 380px;
+    width: 100%;
+    filter: brightness(80%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title-square-wrapper{
+    padding: 20px 0px 10px 35px;
+    background-color: #2b2b2b;
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.title-square-wrapper div:first-child{
+    padding-left: 15px;
+    color: white;
+    font-size: 40px;
+}
+
+.line{
+    border-left: 4px solid darkgray;
+    height: 45px;
+    margin: 12px 7px;
+}
+
+.title-square-wrapper i{
+    color: darkgray;
+    font-size: 30px;
+    padding-top: 13px;
+}
+
+nav {
+    display: flex;
+    color:white;
+    justify-content: flex-end;
+    padding: 25px 0px;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-right: 10px;
+    font-weight: 300;
+    width: 12%;
+}
+
+nav a:last-of-type{
+    padding-right: 35px;
+}
+
+.menu-mobile {
+    display: none;
+    color: white;
+    padding: 10px;
+    padding-right: 0px;
+    float: right;
+}
+
+.menu-mobile i {
+    font-size: 40px;
+}
+
+.title{
+    display: flex;
+    justify-content: flex-end;
+    width: 94%;
+    padding-top: 70px;
+}
+
+.title h1{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 20px;
+}
+
+.gallery-wrapper{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.photo-wrapper.one{
+    background-image: url(../assets/concert-hall.jpg);
+}
+
+.photo-wrapper.two{
+    background-image: url(../assets/bedroom-2.jpg);
+}
+
+.photo-wrapper.three{
+    background-image: url(../assets/hotel.jpg);
+}
+
+.photo-wrapper.four{
+    background-image: url(../assets/bedroom-1.jpg);
+}
+
+.photo-wrapper.five{
+    background-image: url(../assets/library.jpg);
+}
+
+.photo-wrapper.six{
+    background-image: url(../assets/kitchen.jpg);
+}
+
+.photo-wrapper{
+    width: 33.33%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.opacity-layer{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.image-text{
+    text-transform: uppercase;
+    color: white;
+    padding: 20px 25px;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.side-text{
+    letter-spacing: 4px;
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 30px;
+    bottom: 8%;
+}
+
+.form-container{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2b2b2b;
+}
+
+.form-container button{
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #3d3d3d;
+    width: 170px;
+    height: 50px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    align-self: center;
+}
+
+.form-container h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    align-self: center;
+    padding: 20px;
+}
+
+.form-container span:first-of-type{
+    color: #c09c78;
+}
+
+.input-wrapper{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.input-wrapper > * {
+    flex: 1 1 50px;
+}
+
+.input-wrapper input{
+    background-color: #3d3d3d;
+    border: none;
+    color: white;
+    font-weight: 600;
+    width: 25%;
+    height: 40px;
+    margin: 10px ;
+}
+
+.input-wrapper textarea{
+    background-color: #3d3d3d;
+    color: white;
+    font-weight: 600;
+    border: none;
+    resize: none;
+    width: 25%;
+    margin: 10px ;
+    padding: 20px;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:white;
+    padding-left: 20px;
+    font-weight: 500;
+  }
+
+  textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:white;
+    font-weight: 500;
+  }
+
+.submit-container input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+.submit-container{
+    width: 160px;
+    background-color:  #c09c78 ;
+    height: 45px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.submit-container i{
+    padding-top: 14px;
+}
+
+@media (max-width: 600px) {
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .title{
+        width: 100%;
+    }
+
+    .title h1{
+        margin: 26% auto;
+        font-size: 60px;
+    }
+
+    .title-square-wrapper{
+        padding-left: 20px;
+        height: 220px;
+        width: 165px;
+    }
+
+    .gallery-wrapper{
+        flex-direction: column;
+    }
+
+    .photo-wrapper{
+        width: 100%;
+        height: 380px;
+        display: grid;
+    }
+
+    .image-text{
+        margin: auto;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .side-text{
+        position: relative;
+        transform: none;
+        text-align: center;
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .photo-title{
+       display: flex;
+       justify-content: center;
+       font-size: 28px;
+    }
+
+    .photo-title div:last-of-type{
+        color:  #c09c78 ;
+        padding-left: 5px;
+    }
+
+    .form-container button{
+        display: none;
+    }
+
+    .form-container h1{
+        font-size: 40px;
+    }
+
+    .form-container{
+        padding-top: 10px;
+    }
+
+    .input-wrapper{
+       flex-wrap: nowrap;
+       align-items: center;
+       height: fit-content;
+    }
+
+    .input-wrapper > *{
+        flex: none;
+    }
+
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .input-wrapper input{
+        width: 100%;
+    }
+
+    .input-wrapper textarea{
+        width: 100%;
+        height: 100px;
+    }
+
+    .submit-container{
+        float: right;
+        width: 130px;
+        height: 35px;
+    }
+
+    .submit-container i {
+        padding-top: 10px;
+        font-size: 13px;
+    }
+}
