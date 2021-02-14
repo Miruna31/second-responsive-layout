@@ -3,7 +3,7 @@
 const menuIcon =  document.getElementById("menu-icon");
 const mobileMenu = document.getElementById("mobileMenu");
 const menuIconClose =  document.getElementById("menu-icon-close");
-const mainWrapper =document.getElementById("mainWrapper");
+const mainWrapper = document.getElementById("mainWrapper");
 
 
 menuIcon.addEventListener('click', function(){
@@ -17,4 +17,5 @@ menuIcon.addEventListener('click', function(){
 menuIconClose.addEventListener('click', function(){
     console.log('click');
     mobileMenu.classList.add('hidden');
+    mainWrapper.style.overflowY = 'scroll';
 });
