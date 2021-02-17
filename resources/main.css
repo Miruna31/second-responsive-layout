@@ -268,7 +268,7 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 }
 
 /* for JS part */
-
+/* nu era mai ok sa pozitionam wrapper-ul extern? */
 .mobile-wrapper{
     position: relative;
     width: 100%;

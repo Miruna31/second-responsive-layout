@@ -8,6 +8,7 @@ const mainWrapper = document.getElementById("mainWrapper");
 
 menuIcon.addEventListener('click', function(){
     console.log('click');
+    // nu ai neaparat nevoie de if aici pentru ca e o functionalitate dedicata pe menuIcon si acest element nici nu e vizibil altfel
     if(mobileMenu.classList.contains('hidden')){
         mobileMenu.classList.remove('hidden');
         mainWrapper.style.overflowY = 'hidden';
