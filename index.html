@@ -20,23 +20,23 @@
 <body> 
     <header>
         <div class="jumbotron jumbotron-fluid jumbotron-image-header m-0 p-0">
-            <div class="row h-100 ">
-                <div class="title-square-wrapper col-4 position-absolute">
+            <div class="row h-100 m-0 ">
+                <div class="title-square-wrapper col-4 d-flex flex-column position-absolute">
                     <div>go.arch</div>
                     <div class="line"></div>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </div>
 
-                <div class="container ">
-                    <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
+                <div class="container-fluid ">
+                    <nav class="navbar navbar-expand-sm navbar-light justify-content-end">
                         <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
+                          <span class="navbar-toggler-icon "></span>
                         </button>
                       
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+                        <div class="collapse navbar-collapse justify-content-end " id="navbarTogglerDemo03">
                           <ul class="navbar-nav align-items-end ">
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
@@ -54,7 +54,7 @@
                           </ul>
                         </div>
                     </nav>
-                    <div class="title offset-sm-6 offset-lg-9 offset-3 col-4 h-75 d-flex align-items-end ">
+                    <div class="title offset-sm-6 offset-lg-8 offset-3 col-4 h-75 d-flex align-items-end ">
                         <h1>Projects</h1>
                     </div>
                 </div>
@@ -144,12 +144,12 @@
         </div>
 
         <div class="container">
-            <div class="container text-uppercase d-flex justify-content-center">
-                <button type="button" class="btn btn-dark m-4 px-4 rounded">More Projects</button>
+            <div class="container text-uppercase d-flex justify-content-center pt-4">
+                <button type="button" class="btn btn-dark m-4 px-4 rounded d-sm-block d-none">More Projects</button>
             </div>
-            <div class="get-in-touch text-uppercase d-flex justify-content-center p-4">Get <span class="text-warning pl-3"> in touch</span></div>
+            <div class="get-in-touch text-uppercase d-flex justify-content-center p-4 mb-4">Get <span class="text-warning pl-3"> in touch</span></div>
                 <div class="row d-flex justify-content-center">
-                    <form class="w-sm-50">
+                    <form >
                         <div class="row">
                             <div class="col-sm-8 d-flex flex-wrap">
                        
@@ -170,13 +170,13 @@
                                 </div>
                             </div>
 
-                            <div class="form-group col-sm-4 h-sm-150">
-                                <textarea required class="form-control bg-dark form-control-lg h-100 rounded-0"  id="textarea" minlength="50" maxLength="350" placeholder="Message"></textarea>
+                            <div class="form-group col-sm-4 pl-sm-0">
+                                <textarea required class="form-control bg-dark form-control-lg h-100 rounded-0 "  id="textarea" minlength="50" maxLength="350" placeholder="Message"></textarea>
                             </div>
                         </div>
 
                         <div class="container d-flex justify-content-sm-center justify-content-end">
-                            <button type="submit" id="submit" class="btn btn-primary px-4 mb-4">SEND
+                            <button type="submit" id="submit" class="btn btn-primary px-4 my-4">SEND
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                         

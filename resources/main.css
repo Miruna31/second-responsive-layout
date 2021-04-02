@@ -52,8 +52,6 @@ body{
     background-color: #2b2b2b;
     height: 250px;
     width: 200px;
-    display: flex;
-    flex-direction: column;
 }
 
 .title-square-wrapper div:first-child{
@@ -139,4 +137,8 @@ textarea{
 
 .image-text{
     font-size: 20px;
-}}
+}
+.title h1{
+    font-size: 60px;
+}
+}
