@@ -41,6 +41,12 @@ body{
     background-image: url(../assets/kitchen.jpg);
 }
 
+.title h1{
+    font-size: 75px;
+    font-weight: 300;
+    letter-spacing: 8px;
+}
+
 .title-square-wrapper{
     padding: 20px 0px 10px 35px;
     background-color: #2b2b2b;
@@ -48,7 +54,6 @@ body{
     width: 200px;
     display: flex;
     flex-direction: column;
-    position: absolute;
 }
 
 .title-square-wrapper div:first-child{
@@ -106,3 +111,32 @@ body{
     background-color:#c09c78 ;
     border: none;
 }
+
+input{
+    border: none !important;
+}
+
+textarea{
+    border: none !important;
+}
+
+.btn{
+    border-radius: 50px !important;
+}
+
+@media (max-width: 575px) {
+
+.photo-title div:last-of-type{
+    color:  #c09c78 ;
+}
+
+.side-text{
+    position: relative !important;
+    transform: none;
+    width: 100%;
+    text-align: center;
+}
+
+.image-text{
+    font-size: 20px;
+}}
