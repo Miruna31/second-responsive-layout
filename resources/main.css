@@ -122,6 +122,11 @@ textarea{
     border-radius: 50px !important;
 }
 
+.collapse{
+    position: absolute;
+    top: 90%;
+}
+
 @media (max-width: 575px) {
 
 .photo-title div:last-of-type{
