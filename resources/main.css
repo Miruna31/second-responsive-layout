@@ -122,9 +122,40 @@ textarea{
     border-radius: 50px !important;
 }
 
-.collapse{
+.header-mobile div:first-of-type{
+    font-size: 35px;
+}
+
+.bottom-icons{
     position: absolute;
-    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bottom-icons div{
+   width: 50%;
+   border: lightgray;
+   text-align: center;
+   border-top: solid 1px lightgray;
+   padding: 20px;
+}
+
+.bottom-icons div:first-of-type{
+    border-right: solid 1px lightgray;
+}
+
+.bottom-icons a{
+    font-size: 30px;
+    color: darkgray;
+}
+
+.navbar-light .navbar-toggler-icon.selected{
+    background-image: url('../assets/icon-close.png');
+}
+
+.navbar-toggler{
+    z-index: 100;
 }
 
 @media (max-width: 575px) {
@@ -143,7 +174,23 @@ textarea{
 .image-text{
     font-size: 20px;
 }
+
 .title h1{
     font-size: 60px;
+}
+
+.collapse{
+    background-color: #2b2b2b;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.nav-item .nav-link{
+    font-size: 30px;
+    font-weight: 300;
 }
 }
