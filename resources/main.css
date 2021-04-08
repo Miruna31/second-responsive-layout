@@ -116,6 +116,7 @@ input{
 
 textarea{
     border: none !important;
+    height: 112px !important; 
 }
 
 .btn{

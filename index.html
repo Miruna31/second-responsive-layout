@@ -150,56 +150,48 @@
                 </div>
             </div>
         </div>
-
-        <!-- Nu ar trebui sa ai nevoie de un container intr-un container, este de ajuns unul -->
-        <div class="container">
-            <div class="container text-uppercase d-flex justify-content-center pt-4">
-                <button type="button" class="btn btn-dark m-4 px-4 rounded d-sm-block d-none">More Projects</button>
-            </div>
-            <div class="get-in-touch text-uppercase d-flex justify-content-center p-4 mb-4">Get <span class="text-warning pl-3"> in touch</span></div>
-                <div class="row d-flex justify-content-center">
-                    <form>
-                        <div class="row">
-                            <!-- cu acest wrapper pe care ai col-sm-8 si cu cele de mai jos pe care ai col-sm-6 ai 2 randuri de padding left/right pe input-uri si din cauza asta ai textarea mai mare, pentru ca acolo ai doar o serie de padding-uri, avand doar un patinte cu col-sm-4 -->
-                            <!-- as dori sa mai lucrezi putin la structura form-ului sa normalizezi peste tot, ti-am modificat si eu putin, dar as dori sa continui tu -->
-                            <div class="col-sm-8 d-flex flex-wrap">
-                       
-                                <div class="form-group col-sm-6">
-                                    <input class="form-control form-control-lg bg-dark rounded-0 " required type="text" id="name" name="name" placeholder="Name">
-                                </div>
-
-                                <div class="form-group col-sm-6">
-                                    <input required  type="email" class="form-control form-control-lg bg-dark rounded-0" id="emailInput" placeholder="Email" />
-                                </div>
-
-                                <div class="form-group col-sm-6">
-                                    <input required  type="number" class="form-control form-control-lg bg-dark rounded-0" id="phone" placeholder="Phone" />
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input required type="text" class="form-control form-control-lg bg-dark rounded-0" id="company" name="company" placeholder="Company">
-                                    </div>
-                                </div>
+        
+        <div class="container text-uppercase d-flex justify-content-center pt-4">
+            <button type="button" class="btn btn-dark m-4 px-4 rounded d-sm-block d-none">More Projects</button>
+        </div>
+        <div class="get-in-touch text-uppercase d-flex justify-content-center p-4 mb-4">Get <span class="text-warning pl-3"> in touch</span></div>
+            <div class="row d-flex justify-content-center">
+                <form>
+                    <div class="row mx-2 ">
+                        <!-- as dori sa mai lucrezi putin la structura form-ului sa normalizezi peste tot, ti-am modificat si eu putin, dar as dori sa continui tu -->
+                        <div class="col-sm-8 d-flex flex-wrap px-0">
+                    
+                            <div class="form-group col-sm-6">
+                                <input class="form-control form-control-lg bg-dark rounded-0 " required type="text" id="name" name="name" placeholder="Name">
                             </div>
 
-                            <div class="col-sm-4 pl-sm-0">
-                                <div class="form-group">
-                                    <textarea required class="form-control bg-dark form-control-lg h-100 rounded-0"  id="textarea" minlength="50" maxLength="350" placeholder="Message"></textarea>
-                                </div>
+                            <div class="form-group col-sm-6 ">
+                                <input required  type="email" class="form-control form-control-lg bg-dark rounded-0" id="emailInput" placeholder="Email" />
+                            </div>
+
+                            <div class="form-group col-sm-6">
+                                <input required  type="number" class="form-control form-control-lg bg-dark rounded-0" id="phone" placeholder="Phone" />
+                            </div>
+                           
+                            <div class="form-group col-sm-6">
+                                <input required type="text" class="form-control form-control-lg bg-dark rounded-0" id="company" name="company" placeholder="Company">
                             </div>
                         </div>
 
-                        <!-- aici iar avem container in container? nu este cel mai corect mod sa folosim clasa asta, just fyi -->
-                        <div class="container d-flex justify-content-sm-center justify-content-end">
-                            <button type="submit" id="submit" class="btn btn-primary px-4 my-4">SEND
-                            <i class="fas fa-long-arrow-alt-right"></i>
+                        <div class="form-group col-sm-4 pl-sm-0 h-100">
+                            <textarea required class="form-control bg-dark form-control-lg rounded-0"  id="textarea" minlength="50" maxLength="350" placeholder="Message"></textarea>
                         </div>
                         
-                    </form>
-                </div>
+                    </div>
+
+                    <div class="d-flex justify-content-sm-center justify-content-end">
+                        <button type="submit" id="submit" class="btn btn-primary px-4 my-4">SEND
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div> 
+                </form>
+            </div>
+        
         </div>
-    </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="bundles/bootstrap/js/bootstrap.js"></script>
